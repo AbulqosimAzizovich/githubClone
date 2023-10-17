@@ -1,0 +1,135 @@
+.colors::before {
+  content: "";
+  border: 0px solid black;
+  border-radius: 55px;
+  width: 8px;
+  height: 8px;
+  padding: 6px !important;
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.yellow::before {
+  background-color: #f1e05a;
+}
+
+.red::before {
+  background-color: #e34c26;
+}
+
+.purple::before {
+  background-color: #563d7c;
+}
+
+.pink::before {
+  background-color: #c25189;
+}
+
+.overview {
+  width: 100%;
+  margin-left: 15px;
+  padding-top: 10px;
+
+  &__up {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+
+    &-text2 {
+      font-weight: 300;
+      font-size: 13px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 21px;
+    padding: 0;
+
+    &--item {
+      list-style-type: none;
+      border: 1px solid #d0d7de;
+      border-radius: 5px;
+      padding: 15px;
+      width: 48%;
+
+      &--up {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-link {
+          text-decoration: none;
+          font-weight: 500;
+          color: #4783C9;
+          &:hover {
+            text-decoration: underline;
+            color: none;
+          }
+        }
+
+        &-circle {
+          font-size: 14px;
+          border: 1px solid #d0d7de;
+          border-radius: 50px;
+          padding: 0 6px;
+          color: grey;
+        }
+      }
+
+      &-text {
+        margin: 10px 0;
+        font-weight: 400;
+        font-size: 13px;
+        color:#C2CBD2;
+      }
+
+      &--down {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        margin-top: 13px;
+
+        &-text2 {
+          margin: 0;
+          font-size: 14px;
+          color: #C2CBD2;
+        }
+      }
+    }
+  }
+
+}
+
+.loader__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px dotted black;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 2s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.overview__up-text1,.overview__up-text2{
+  color: #C5CDD5;
+}

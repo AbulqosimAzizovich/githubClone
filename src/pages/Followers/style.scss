@@ -1,0 +1,81 @@
+.followers__wrapper {
+  width: 100%;
+  margin-left: 25px;
+  margin-top: -18px;
+
+  .followers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+
+    &__round {
+      display: flex;
+      align-items: center;
+
+      &-img {
+        border-radius: 50px;
+        width: 55px;
+      }
+
+      &--content {
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+
+        &-user {
+          color: grey;
+          margin-left: 10px;
+          font-size: 14px;
+          text-decoration: none;
+          &:hover {
+            color: #4784C9;
+          }
+        }
+      }
+
+      &-bio {
+        font-size: 14px;
+        font-weight: 300;
+        color: grey;
+      }
+    }
+
+    &-btn {
+      font-size: 13px;
+      font-weight: 500;
+      padding: 4px 15px;
+      border-radius: 6px;
+      border: 1px solid #d0d7de;
+      background-color: #dd1111;
+    }
+  }
+}
+
+.loader__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.loader {
+width: 48px;
+height: 48px;
+border: 5px dotted black;
+border-radius: 50%;
+display: inline-block;
+position: relative;
+box-sizing: border-box;
+animation: rotation 2s linear infinite;
+
+}
+
+@keyframes rotation {
+0% {
+  transform: rotate(0deg);
+}
+100% {
+  transform: rotate(360deg);
+}
+}
