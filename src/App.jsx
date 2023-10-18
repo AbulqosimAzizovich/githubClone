@@ -9,6 +9,9 @@ import Overview from "./pages/Overview";
 import Repo from "./pages/Repo";
 import Followers from "./pages/Followers";
 import Following from "./pages/Following";
+import Stars from "./pages/Stars/index";
+import Packages from "./pages/Packages/index";
+import Projects from "./pages/Projects/index";
 
 const App = () => {
   const [state, setState] = useState(false);
@@ -29,6 +32,9 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Overview />} />
               <Route path="/repositories" element={<Repo />} />
+              <Route path="/stars" element={<Stars />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/packages" element={<Packages />} />
               <Route path="/followers" element={<Followers />} />
               <Route path="/following" element={<Following />} />
             </Routes>

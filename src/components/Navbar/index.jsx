@@ -50,7 +50,7 @@ const index = () => {
               {" "}
               <i className="bi bi-github"></i>
             </span>
-            <form action="#" onSubmit={(event) => Clicked(event)}>
+            {/* <form action="#" onSubmit={(event) => Clicked(event)}>
               <label className="nav__left-label" htmlFor="#">
                 <input
                   className="nav__left-label-input"
@@ -66,7 +66,7 @@ const index = () => {
                   /
                 </button>
               </label>
-            </form>
+            </form> */}
 
             <ul className="nav__list">
               <li className="nav__list--item">
@@ -133,6 +133,23 @@ const index = () => {
           </div>
 
           <div className="nav__right">
+            <form action="#" onSubmit={(event) => Clicked(event)}>
+              <label className="nav__left-label" htmlFor="#">
+                <input
+                  className="nav__left-label-input"
+                  type="search"
+                  value={value}
+                  onChange={(e) => {
+                    setValue(e.target.value);
+                    localStorage.setItem("key", e.target.value);
+                  }}
+                  placeholder="Search or jump to..."
+                />
+                <button type="submit" className="nav__left-label-slash">
+                  /
+                </button>
+              </label>
+            </form>
             <span className="nav__right-bell">
               {" "}
               <i className="bi bi-bell"></i>{" "}

@@ -1,107 +1,106 @@
 .sidebar {
-    z-index: 9;
-    
-    &__content {
-        width: 300px;
-        position: relative;
-        bottom: 50px;
-        color: #B5BDC5;
+  z-index: 9;
+  margin-top: 70px;
+  &__content {
+    width: 300px;
+    position: relative;
+    bottom: 50px;
+    color: #b5bdc5;
 
-        &-img {
-            border-radius: 250px;
-            width: 296px;
-        }
-
-        &-name {
-            font-size: 25px;
-            margin-bottom: 0;
-            margin-top: 20px;
-        }
-
-        &-username {
-            color: #C7CED6;
-            font-weight: 300;
-            font-size: 18px;
-            margin-bottom: 0px;
-        }
-
-        &-bio {
-            margin: 15px 0;
-        }
-
-        &-btn {
-            width: 295px;
-            border-radius: 5px;
-            outline: none;
-            border: 1px solid #6f7275;
-            background-color: #21262D;
-            padding: 3px 0;
-            font-size: 14px;
-            font-weight: 500;
-            color: #B5BDC5;
-            &:hover {
-                background-color: #51565e;
-            }
-        }
-
-        &--list {
-            display: flex;
-            align-items: center;
-            justify-content: start;
-            gap: 15px;
-            margin-top: 15px;
-            margin-right: 0;
-            padding: 0;
-
-            &--item {
-                list-style-type: none;
-
-                &-link {
-                    text-decoration: none;
-                    color: #B5BDC5
-                }
-
-                &-icon {
-                    &:hover {
-                        color: #58A6FF
-                    }
-                }
-            }
-        }
-
-        &--round {
-            position: absolute;
-
-            text-align: center;
-            top: 231px;
-            right: 15px;
-            width: 37px;
-            padding: 7px;
-            height: 37px;
-            border: 1px solid grey;
-            border-radius: 100%;
-            background-color: #0D1117;
-
-          &:hover{
-            text-align: start;
-            top: 231px;
-            right: -51px;
-            width: 100px;
-            padding: 7px;
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            
-          }
-
-          &:hover::after {
-            position: relative;
-            content: "Set status";
-            font-size: 12px;
-            color: #58A6FF;
-            transition: all 1s cubic-bezier(1,-0.12, 1,-0.2);
-          }
-        }
+    &-img {
+      border-radius: 250px;
+      width: 296px;
     }
+
+    &-name {
+      font-size: 25px;
+      margin-bottom: 0;
+      margin-top: 20px;
+    }
+
+    &-username {
+      color: #c7ced6;
+      font-weight: 300;
+      font-size: 18px;
+      margin-bottom: 0px;
+    }
+
+    &-bio {
+      margin: 15px 0;
+    }
+
+    &-btn {
+      width: 295px;
+      border-radius: 5px;
+      outline: none;
+      border: 1px solid #6f7275;
+      background-color: #21262d;
+      padding: 3px 0;
+      font-size: 14px;
+      font-weight: 500;
+      color: #b5bdc5;
+      &:hover {
+        background-color: #51565e;
+      }
+    }
+
+    &--list {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 15px;
+      margin-top: 15px;
+      margin-right: 0;
+      padding: 0;
+
+      &--item {
+        list-style-type: none;
+
+        &-link {
+          text-decoration: none;
+          color: #b5bdc5;
+        }
+
+        &-icon {
+          &:hover {
+            color: #58a6ff;
+          }
+        }
+      }
+    }
+
+    &--round {
+      position: absolute;
+
+      text-align: center;
+      top: 231px;
+      right: 15px;
+      width: 37px;
+      padding: 7px;
+      height: 37px;
+      border: 1px solid grey;
+      border-radius: 100%;
+      background-color: #0d1117;
+
+      &:hover {
+        text-align: start;
+        top: 231px;
+        right: -51px;
+        width: 100px;
+        padding: 7px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      &:hover::after {
+        position: relative;
+        content: "Set status";
+        font-size: 12px;
+        color: #58a6ff;
+        transition: all 1s cubic-bezier(1, -0.12, 1, -0.2);
+      }
+    }
+  }
 }

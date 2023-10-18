@@ -1,0 +1,12 @@
+.stars {
+  width: 100%;
+  display: grid;
+  place-content: center;
+  img{
+    margin-left: 10px;
+  }
+  p {
+    text-align: center;
+    margin-top: 15px;
+  }
+}
